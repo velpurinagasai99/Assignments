@@ -1,0 +1,59 @@
+.container-contact {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+
+}
+.form-control {
+    border-radius:5px;
+    font-size:14px;
+    font-weight:bold;
+    font-family: 'Suez One', serif;
+    height:40px;
+    width:200px;
+    color: black;
+    background-color:rgb(219, 224, 223);
+    margin: 5px;
+}
+.btn-login button {
+    padding:9px;
+    background-color: rgba(0, 136,169,1);
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    width: 200px;
+    font-size: 16px;
+    color: white;
+    align-items: center;
+    justify-content:center;
+}
+.btn-login button a:hover {
+     color:black;
+     background-color:yellow;
+}
+.msg {
+    height: 90px;
+    width: 200px;
+    border-radius:5px;
+    font-size:14px;
+    font-weight:bold;
+    font-family: 'Suez One', serif;
+    color:black;
+    background-color:rgb(219, 224, 223);
+    margin-left: 5px;
+    margin-top: 4px;
+}
+.container-login-btn {
+    height: 70px;
+    width: 200px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
