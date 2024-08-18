@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+{% block title %}Translator Page{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="head-nav"><h3 style="font-size:10px; color:yellow; font-weight:bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Disclaimer :- Plesae Click on the three dot and click "Add to Home screen" for better view and quick access</h3></div>
+<div class="logo-heading">
+    <img src="{{url_for('static', filename='img/logo1.png')}}" alt="Super TransLator">
+    <div class="sm">
+    <a href="https://wa.me/9090843994" class="nav__link">
+        <i class="material-icons nav__icon">whatsapp</i>
+      </a>
+      <a href="https://www.facebook.com/WDFD.Developer/?" class="nav__link">
+        <i class="material-icons nav__icon">facebook</i>
+      </a>
+    </div>
+</div>   
+    <div class="container-data">
+    <form method="POST" action="/">
+    <input type="text" class="text" name="sentence" placeholder="Enter or Paste sentences" Required><br>
+    <select class="teamForm" id="teamDropdownSelector" type="text" name="inputvalue" placeholder="Select A Language" Required>
+        <option disabled selected>Select a Language</option>
+        <option id="WatfordVSManchester Utd" value="hi">Hindi</option>
+        <option id="WatfordVSManchester Utd" value="en">English</option>
+        
+    </select>
+    <br>
+        <button type="submit" class="btn btn-primary">TRANSLATE</button>
+    </form>
+    </div>
+    {% if output %}
+    <div class="sentence">
+    <h2>{{sentence}}</h2>
+    </div>
+    <h2 style="text-align:center; font-size:20px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:blue;margin-top:30px;"> Translated Sentences </h2>
+    <div class="output">
+        <h2>{{output}}</h2>
+        </div>
+    {% else %}
+    <div class="sentence">
+        <h2>Please Enter or Paste Text or Sentences.
+            The Translated Sentences will be shown here.
+        </h2>
+        </div>
+    {% endif %}
+    
+    
+    
+        
+   
+</div>
+<div class="head"><h2> Copyright &copy; Super Translator 2021</h2></div> 
+</div>  
+{% endblock %}
